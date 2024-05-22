@@ -1,7 +1,10 @@
 {
   "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0",
     "express": "^4.19.2",
-    "mongoose": "^8.4.0"
+    "mongoose": "^8.4.0",
+    "prettier": "^3.2.5"
   },
   "name": "backend_professional_chai-or-code",
   "description": "All_Models Architecture Graph link :- https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj",
