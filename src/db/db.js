@@ -10,7 +10,7 @@ import 'dotenv/config'
       `${process.env.MONGODB_URI}/${dataBaseName}`
     );
     console.log(`dataBase connect Successfully`);
-    console.log(isConnect.connection.host);
+    console.log(isConnect.connection.host);   // ac-tjzxqva-shard-00-01.wryqghc.mongodb.net
   } catch (error) {
     console.error("error", error);
     // throw error
