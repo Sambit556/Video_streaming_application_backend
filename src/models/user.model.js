@@ -79,7 +79,7 @@ userstore.methods.generateAccessToken = async function () {
 };
 userstore.methods.generateRefreshToken = async function () {
      jwt.sign({
-          _id:this._id,
+          _id:this._id
      },
      process.env.REFERESH_ACCESS_TOKEN,
      {
