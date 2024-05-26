@@ -1,1 +1,3 @@
- export const dataBaseName= "streamingDB"
+const dataBaseName = "streamingDB";
+
+module.exports = { dataBaseName };

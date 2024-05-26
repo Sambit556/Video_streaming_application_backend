@@ -1,16 +1,16 @@
-import { mongoose }  from "mongoose";
+const mongoose = require("mongoose");
 
-import { dataBaseName }  from "../constraints.js";
+const { dataBaseName } = require("../constraints.js");
 
-import 'dotenv/config'
+require("dotenv").config();
 
- const dbConnect = async () => {
+const dbConnect = async () => {
   try {
     const isConnect = await mongoose.connect(
       `${process.env.MONGODB_URI}/${dataBaseName}`
     );
     console.log(`dataBase connect Successfully`);
-    console.log(isConnect.connection.host);   // ac-tjzxqva-shard-00-01.wryqghc.mongodb.net
+    console.log(isConnect.connection.host); // ac-tjzxqva-shard-00-01.wryqghc.mongodb.net
   } catch (error) {
     console.error("error", error);
     // throw error
@@ -18,6 +18,10 @@ import 'dotenv/config'
   }
 };
 
-export default dbConnect
+// export default dbConnect
 // module.exports.dbConnect=dbConnect;       // 4 way of export the files
 // exports.dbConnect=dbConnect;
+// export {dbConnect }
+module.exports = {
+  dbConnect,
+};
